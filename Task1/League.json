@@ -2,59 +2,224 @@
     "premier_league_table": [
         {
             "team": "Manchester City",
-            "played": 35,
+            "played": 37,
+            "won": 27,
+            "drawn": 7,
+            "lost": 3,
+            "for": 93,
+            "against": 33,
+            "gd": 60,
+            "points": 88
+          },
+          {
+            "team": "Arsenal",
+            "played": 37,
             "won": 27,
             "drawn": 5,
-            "lost": 3,
-            "goals_for": 85,
-            "goals_against": 24,
-            "goal_diff": 61,
+            "lost": 5,
+            "for": 89,
+            "against": 28,
+            "gd": 61,
             "points": 86
-        },
-        {
-            "team": "Arsenal",
-            "played": 35,
-            "won": 24,
-            "drawn": 7,
-            "lost": 4,
-            "goals_for": 78,
-            "goals_against": 33,
-            "goal_diff": 45,
-            "points": 79
-        },
-        {
+          },
+          {
             "team": "Liverpool",
-            "played": 35,
-            "won": 22,
-            "drawn": 8,
-            "lost": 5,
-            "goals_for": 77,
-            "goals_against": 36,
-            "goal_diff": 41,
-            "points": 74
-        },
-        {
-            "team": "Manchester United",
-            "played": 35,
-            "won": 21,
-            "drawn": 7,
-            "lost": 7,
-            "goals_for": 63,
-            "goals_against": 37,
-            "goal_diff": 26,
-            "points": 70
-        },
-        {
-            "team": "Chelsea",
-            "played": 35,
-            "won": 20,
+            "played": 37,
+            "won": 23,
             "drawn": 10,
-            "lost": 5,
-            "goals_for": 58,
-            "goals_against": 31,
-            "goal_diff": 27,
-            "points": 70
-        }
+            "lost": 4,
+            "for": 84,
+            "against": 41,
+            "gd": 43,
+            "points": 79
+          },
+          {
+            "team": "Aston Villa",
+            "played": 37,
+            "won": 20,
+            "drawn": 8,
+            "lost": 9,
+            "for": 76,
+            "against": 56,
+            "gd": 20,
+            "points": 68
+          },
+          {
+            "team": "Tottenham Hotspur",
+            "played": 37,
+            "won": 19,
+            "drawn": 6,
+            "lost": 12,
+            "for": 71,
+            "against": 61,
+            "gd": 10,
+            "points": 63
+          },
+          {
+            "team": "Chelsea",
+            "played": 37,
+            "won": 17,
+            "drawn": 9,
+            "lost": 11,
+            "for": 75,
+            "against": 62,
+            "gd": 13,
+            "points": 60
+          },
+          {
+            "team": "Newcastle United",
+            "played": 37,
+            "won": 17,
+            "drawn": 6,
+            "lost": 14,
+            "for": 81,
+            "against": 60,
+            "gd": 21,
+            "points": 57
+          },
+          {
+            "team": "Manchester United",
+            "played": 37,
+            "won": 17,
+            "drawn": 6,
+            "lost": 14,
+            "for": 55,
+            "against": 58,
+            "gd": -3,
+            "points": 57
+          },
+          {
+            "team": "West Ham United",
+            "played": 37,
+            "won": 14,
+            "drawn": 10,
+            "lost": 13,
+            "for": 59,
+            "against": 71,
+            "gd": -12,
+            "points": 52
+          },
+          {
+            "team": "Brighton & Hove Albion",
+            "played": 37,
+            "won": 12,
+            "drawn": 12,
+            "lost": 13,
+            "for": 55,
+            "against": 60,
+            "gd": -5,
+            "points": 48
+          },
+          {
+            "team": "AFC Bournemouth",
+            "played": 37,
+            "won": 13,
+            "drawn": 9,
+            "lost": 15,
+            "for": 53,
+            "against": 65,
+            "gd": -12,
+            "points": 48
+          },
+          {
+            "team": "Crystal Palace",
+            "played": 37,
+            "won": 12,
+            "drawn": 10,
+            "lost": 15,
+            "for": 52,
+            "against": 58,
+            "gd": -6,
+            "points": 46
+          },
+          {
+            "team": "Wolverhampton Wanderers",
+            "played": 37,
+            "won": 13,
+            "drawn": 7,
+            "lost": 17,
+            "for": 50,
+            "against": 63,
+            "gd": -13,
+            "points": 46
+          },
+          {
+            "team": "Fulham",
+            "played": 37,
+            "won": 12,
+            "drawn": 8,
+            "lost": 17,
+            "for": 51,
+            "against": 59,
+            "gd": -8,
+            "points": 44
+          },
+          {
+            "team": "Everton",
+            "played": 37,
+            "won": 13,
+            "drawn": 9,
+            "lost": 15,
+            "for": 39,
+            "against": 49,
+            "gd": -10,
+            "points": 40
+          },
+          {
+            "team": "Brentford",
+            "played": 37,
+            "won": 10,
+            "drawn": 9,
+            "lost": 18,
+            "for": 54,
+            "against": 61,
+            "gd": -7,
+            "points": 39
+          },
+          {
+            "team": "Nottingham Forest",
+            "played": 37,
+            "won": 8,
+            "drawn": 9,
+            "lost": 20,
+            "for": 47,
+            "against": 66,
+            "gd": -19,
+            "points": 29
+          },
+          {
+            "team": "Luton Town",
+            "played": 37,
+            "won": 6,
+            "drawn": 8,
+            "lost": 23,
+            "for": 50,
+            "against": 81,
+            "gd": -31,
+            "points": 26
+          },
+          {
+            "team": "Burnley",
+            "played": 37,
+            "won": 5,
+            "drawn": 9,
+            "lost": 23,
+            "for": 40,
+            "against": 76,
+            "gd": -36,
+            "points": 24
+          },
+          {
+            "team": "Sheffield United",
+            "played": 37,
+            "won": 3,
+            "drawn": 7,
+            "lost": 27,
+            "for": 35,
+            "against": 101,
+            "gd": -66,
+            "points": 16
+          }
     ],
     "top_scorers": [
         {

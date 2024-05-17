@@ -12,12 +12,12 @@
             "won": { "type": "integer" },
             "drawn": { "type": "integer" },
             "lost": { "type": "integer" },
-            "goals_for": { "type": "integer" },
-            "goals_against": { "type": "integer" },
-            "goal_diff": { "type": "integer" },
+            "for": { "type": "integer" },
+            "against": { "type": "integer" },
+            "gd": { "type": "integer" },
             "points": { "type": "integer" }
           },
-          "required": ["team", "played", "won", "drawn", "lost", "goals_for", "goals_against", "goal_diff", "points"]
+          "required": ["team", "played", "won", "drawn", "lost", "for", "against", "gd", "points"]
         }
       },
       "top_scorers": {
