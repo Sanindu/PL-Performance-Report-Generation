@@ -1,0 +1,69 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+      "premier_league_table": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "team": { "type": "string" },
+            "played": { "type": "integer" },
+            "won": { "type": "integer" },
+            "drawn": { "type": "integer" },
+            "lost": { "type": "integer" },
+            "goals_for": { "type": "integer" },
+            "goals_against": { "type": "integer" },
+            "goal_diff": { "type": "integer" },
+            "points": { "type": "integer" }
+          },
+          "required": ["team", "played", "won", "drawn", "lost", "goals_for", "goals_against", "goal_diff", "points"]
+        }
+      },
+      "top_scorers": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "name": { "type": "string" },
+            "team": { "type": "string" },
+            "goals": { "type": "integer" },
+            "assists": { "type": "integer" },
+            "played": { "type": "integer" },
+            "goals_per_90": { "type": "number" },
+            "mins_per_goal": { "type": "integer" },
+            "total_shots": { "type": "integer" },
+            "goal_conversion": { "type": "string" },
+            "shot_accuracy": { "type": "string" }
+          },
+          "required": ["name", "team", "goals", "assists", "played", "goals_per_90", "mins_per_goal", "total_shots", "goal_conversion", "shot_accuracy"]
+        }
+      },
+      "scores_fixtures": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "date": { "type": "string" },
+            "matches": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "team_01": { "type": "string" },
+                  "score_team_01": { "type": "integer" },
+                  "team_02": { "type": "string" },
+                  "score_team_02": { "type": "integer" },
+                  "conclusion": { "type": "string", "enum": ["FT"] }
+                },
+                "required": ["team_01", "score_team_01", "team_02", "score_team_02", "conclusion"]
+              }
+            }
+          },
+          "required": ["date", "matches"]
+        }
+      }
+    },
+    "required": ["premier_league_table", "top_scorers", "scores_fixtures"]
+  }
+  
