@@ -309,5 +309,1340 @@
             "goal_conversion": "25%",
             "shot_accuracy": "60%"
         }
+    ],
+    "scores_fixtures": [
+        {
+            "date": "Wednesday 15th May",
+            "matches": [
+                {
+                    "team_01": "Brighton & Hove Albion",
+                    "score_team_01": 1,
+                    "team_02": "Chelsea",
+                    "score_team_02": 2,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Manchester United",
+                    "score_team_01": 3,
+                    "team_02": "Newcastle United",
+                    "score_team_02": 2,
+                    "conclusion": "FT"
+                }
+            ]
+        },
+        {
+            "date": "Tuesday 14th May",
+            "matches": [
+                {
+                    "team_01": "Tottenham Hotspur",
+                    "score_team_01": 2,
+                    "team_02": "Manchester City",
+                    "score_team_02": 2,
+                    "conclusion": "FT"
+                }
+            ]
+        },
+        {
+            "date": "Monday 13th May",
+            "matches": [
+                {
+                    "team_01": "Aston Villa",
+                    "score_team_01": 3,
+                    "team_02": "Liverpool",
+                    "score_team_02": 3,
+                    "conclusion": "FT"
+                }
+            ]
+        },
+        {
+            "date": "Sunday 12th May",
+            "matches": [
+                {
+                    "team_01": "Manchester United",
+                    "score_team_01": 0,
+                    "team_02": "Arsenal",
+                    "score_team_02": 1,
+                    "conclusion": "FT"
+                }
+            ]
+        },
+        {
+            "date": "Saturday 11th May",
+            "matches": [
+                {
+                    "team_01": "Fulham",
+                    "score_team_01": 0,
+                    "team_02": "Manchester City",
+                    "score_team_02": 4,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "AFC Bournemouth",
+                    "score_team_01": 1,
+                    "team_02": "Brentford",
+                    "score_team_02": 2,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Everton",
+                    "score_team_01": 1,
+                    "team_02": "Sheffield United",
+                    "score_team_02": 0,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Newcastle United",
+                    "score_team_01": 1,
+                    "team_02": "Brighton & Hove Albion",
+                    "score_team_02": 1,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Tottenham Hotspur",
+                    "score_team_01": 2,
+                    "team_02": "Burnley",
+                    "score_team_02": 1,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "West Ham United",
+                    "score_team_01": 3,
+                    "team_02": "Luton Town",
+                    "score_team_02": 1,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Wolverhampton Wanderers",
+                    "score_team_01": 1,
+                    "team_02": "Crystal Palace",
+                    "score_team_02": 3,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Nottingham Forest",
+                    "score_team_01": 2,
+                    "team_02": "Chelsea",
+                    "score_team_02": 3,
+                    "conclusion": "FT"
+                }
+            ]
+        },
+        {
+            "date": "Monday 6th May",
+            "matches": [
+                {
+                    "team_01": "Crystal Palace",
+                    "score_team_01": 4,
+                    "team_02": "Manchester United",
+                    "score_team_02": 0,
+                    "conclusion": "FT"
+                }
+            ]
+        },
+        {
+            "date": "Sunday 5th May",
+            "matches": [
+                {
+                    "team_01": "Brighton & Hove Albion",
+                    "score_team_01": 1,
+                    "team_02": "Aston Villa",
+                    "score_team_02": 0,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Chelsea",
+                    "score_team_01": 5,
+                    "team_02": "West Ham United",
+                    "score_team_02": 0,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Liverpool",
+                    "score_team_01": 4,
+                    "team_02": "Tottenham Hotspur",
+                    "score_team_02": 2,
+                    "conclusion": "FT"
+                }
+            ]
+        },
+        {
+            "date": "Saturday 4th May",
+            "matches": [
+                {
+                    "team_01": "Arsenal",
+                    "score_team_01": 3,
+                    "team_02": "AFC Bournemouth",
+                    "score_team_02": 0,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Brentford",
+                    "score_team_01": 0,
+                    "team_02": "Fulham",
+                    "score_team_02": 0,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Burnley",
+                    "score_team_01": 1,
+                    "team_02": "Newcastle United",
+                    "score_team_02": 4,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Sheffield United",
+                    "score_team_01": 1,
+                    "team_02": "Nottingham Forest",
+                    "score_team_02": 3,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Manchester City",
+                    "score_team_01": 5,
+                    "team_02": "Wolverhampton Wanderers",
+                    "score_team_02": 1,
+                    "conclusion": "FT"
+                }
+            ]
+        },
+        {
+            "date": "Friday 3rd May",
+            "matches": [
+                {
+                    "team_01": "Luton Town",
+                    "score_team_01": 1,
+                    "team_02": "Everton",
+                    "score_team_02": 1,
+                    "conclusion": "FT"
+                }
+            ]
+        },
+        {
+            "date": "Thursday 2nd May",
+            "matches": [
+                {
+                    "team_01": "Chelsea",
+                    "score_team_01": 2,
+                    "team_02": "Tottenham Hotspur",
+                    "score_team_02": 0,
+                    "conclusion": "FT"
+                }
+            ]
+        },
+        {
+            "date": "Sunday 28th April",
+            "matches": [
+                {
+                    "team_01": "AFC Bournemouth",
+                    "score_team_01": 3,
+                    "team_02": "Brighton & Hove Albion",
+                    "score_team_02": 0,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Tottenham Hotspur",
+                    "score_team_01": 2,
+                    "team_02": "Arsenal",
+                    "score_team_02": 3,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Nottingham Forest",
+                    "score_team_01": 0,
+                    "team_02": "Manchester City",
+                    "score_team_02": 2,
+                    "conclusion": "FT"
+                }
+            ]
+        },
+        {
+            "date": "Saturday 27th April",
+            "matches": [
+                {
+                    "team_01": "West Ham United",
+                    "score_team_01": 2,
+                    "team_02": "Liverpool",
+                    "score_team_02": 2,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Wolverhampton Wanderers",
+                    "score_team_01": 2,
+                    "team_02": "Luton Town",
+                    "score_team_02": 1,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Manchester United",
+                    "score_team_01": 1,
+                    "team_02": "Burnley",
+                    "score_team_02": 1,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Fulham",
+                    "score_team_01": 1,
+                    "team_02": "Crystal Palace",
+                    "score_team_02": 1,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Newcastle United",
+                    "score_team_01": 5,
+                    "team_02": "Sheffield United",
+                    "score_team_02": 1,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Everton",
+                    "score_team_01": 1,
+                    "team_02": "Brentford",
+                    "score_team_02": 0,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Aston Villa",
+                    "score_team_01": 2,
+                    "team_02": "Chelsea",
+                    "score_team_02": 2,
+                    "conclusion": "FT"
+                }
+            ]
+        },
+        {
+            "date": "Thursday 25th April",
+            "matches": [
+                {
+                    "team_01": "Brighton & Hove Albion",
+                    "score_team_01": 0,
+                    "team_02": "Manchester City",
+                    "score_team_02": 4,
+                    "conclusion": "FT"
+                }
+            ]
+        },
+        {
+            "date": "Wednesday 24th April",
+            "matches": [
+                {
+                    "team_01": "Wolverhampton Wanderers",
+                    "score_team_01": 0,
+                    "team_02": "AFC Bournemouth",
+                    "score_team_02": 1,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Everton",
+                    "score_team_01": 2,
+                    "team_02": "Liverpool",
+                    "score_team_02": 0,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Manchester United",
+                    "score_team_01": 4,
+                    "team_02": "Sheffield United",
+                    "score_team_02": 2,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Crystal Palace",
+                    "score_team_01": 2,
+                    "team_02": "Newcastle United",
+                    "score_team_02": 0,
+                    "conclusion": "FT"
+                }
+            ]
+        },
+        {
+            "date": "Tuesday 23rd April",
+            "matches": [
+                {
+                    "team_01": "Arsenal",
+                    "score_team_01": 5,
+                    "team_02": "Chelsea",
+                    "score_team_02": 0,
+                    "conclusion": "FT"
+                }
+            ]
+        },
+        {
+            "date": "Sunday 21st April",
+            "matches": [
+                {
+                    "team_01": "Everton",
+                    "score_team_01": 2,
+                    "team_02": "Nottingham Forest",
+                    "score_team_02": 0,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Aston Villa",
+                    "score_team_01": 3,
+                    "team_02": "AFC Bournemouth",
+                    "score_team_02": 1,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Crystal Palace",
+                    "score_team_01": 5,
+                    "team_02": "West Ham United",
+                    "score_team_02": 2,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Fulham",
+                    "score_team_01": 1,
+                    "team_02": "Liverpool",
+                    "score_team_02": 3,
+                    "conclusion": "FT"
+                }
+            ]
+        },
+        {
+            "date": "Saturday 20th April",
+            "matches": [
+                {
+                    "team_01": "Luton Town",
+                    "score_team_01": 1,
+                    "team_02": "Brentford",
+                    "score_team_02": 5,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Sheffield United",
+                    "score_team_01": 1,
+                    "team_02": "Burnley",
+                    "score_team_02": 4,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Wolverhampton Wanderers",
+                    "score_team_01": 0,
+                    "team_02": "Arsenal",
+                    "score_team_02": 2,
+                    "conclusion": "FT"
+                }
+            ]
+        },
+        {
+            "date": "Monday 15th April",
+            "matches": [
+                {
+                    "team_01": "Chelsea",
+                    "score_team_01": 6,
+                    "team_02": "Everton",
+                    "score_team_02": 0,
+                    "conclusion": "FT"
+                }
+            ]
+        },
+        {
+            "date": "Sunday 14th April",
+            "matches": [
+                {
+                    "team_01": "Liverpool",
+                    "score_team_01": 0,
+                    "team_02": "Crystal Palace",
+                    "score_team_02": 1,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "West Ham United",
+                    "score_team_01": 0,
+                    "team_02": "Fulham",
+                    "score_team_02": 2,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Arsenal",
+                    "score_team_01": 0,
+                    "team_02": "Aston Villa",
+                    "score_team_02": 2,
+                    "conclusion": "FT"
+                }
+            ]
+        },
+        {
+            "date": "Saturday 13th April",
+            "matches": [
+                {
+                    "team_01": "Newcastle United",
+                    "score_team_01": 4,
+                    "team_02": "Tottenham Hotspur",
+                    "score_team_02": 0,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Manchester City",
+                    "score_team_01": 5,
+                    "team_02": "Luton Town",
+                    "score_team_02": 1,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Burnley",
+                    "score_team_01": 1,
+                    "team_02": "Brighton & Hove Albion",
+                    "score_team_02": 1,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Brentford",
+                    "score_team_01": 2,
+                    "team_02": "Sheffield United",
+                    "score_team_02": 0,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Nottingham Forest",
+                    "score_team_01": 2,
+                    "team_02": "Wolverhampton Wanderers",
+                    "score_team_02": 2,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "AFC Bournemouth",
+                    "score_team_01": 2,
+                    "team_02": "Manchester United",
+                    "score_team_02": 2,
+                    "conclusion": "FT"
+                }
+            ]
+        },
+        {
+            "date": "Sunday 7th April",
+            "matches": [
+                {
+                    "team_01": "Manchester United",
+                    "score_team_01": 2,
+                    "team_02": "Liverpool",
+                    "score_team_02": 2,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Sheffield United",
+                    "score_team_01": 2,
+                    "team_02": "Chelsea",
+                    "score_team_02": 2,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Tottenham Hotspur",
+                    "score_team_01": 3,
+                    "team_02": "Nottingham Forest",
+                    "score_team_02": 1,
+                    "conclusion": "FT"
+                }
+            ]
+        },
+        {
+            "date": "Saturday 6th April",
+            "matches": [
+                {
+                    "team_01": "Crystal Palace",
+                    "score_team_01": 2,
+                    "team_02": "Manchester City",
+                    "score_team_02": 4,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Everton",
+                    "score_team_01": 1,
+                    "team_02": "Burnley",
+                    "score_team_02": 0,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Aston Villa",
+                    "score_team_01": 3,
+                    "team_02": "Brentford",
+                    "score_team_02": 3,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Fulham",
+                    "score_team_01": 0,
+                    "team_02": "Newcastle United",
+                    "score_team_02": 1,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Wolverhampton Wanderers",
+                    "score_team_01": 1,
+                    "team_02": "West Ham United",
+                    "score_team_02": 2,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Luton Town",
+                    "score_team_01": 2,
+                    "team_02": "AFC Bournemouth",
+                    "score_team_02": 1,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Brighton & Hove Albion",
+                    "score_team_01": 0,
+                    "team_02": "Arsenal",
+                    "score_team_02": 3,
+                    "conclusion": "FT"
+                }
+            ]
+        },
+        {
+            "date": "Thursday 4th April",
+            "matches": [
+                {
+                    "team_01": "Liverpool",
+                    "score_team_01": 3,
+                    "team_02": "Sheffield United",
+                    "score_team_02": 1,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Chelsea",
+                    "score_team_01": 4,
+                    "team_02": "Manchester United",
+                    "score_team_02": 3,
+                    "conclusion": "FT"
+                }
+            ]
+        },
+        {
+            "date": "Wednesday 3rd April",
+            "fixtures": [
+                {
+                    "team_01": "Arsenal",
+                    "score_team_01": 2,
+                    "team_02": "Luton Town",
+                    "score_team_02": 0,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Brentford",
+                    "score_team_01": 0,
+                    "team_02": "Brighton & Hove Albion",
+                    "score_team_02": 0,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Manchester City",
+                    "score_team_01": 4,
+                    "team_02": "Aston Villa",
+                    "score_team_02": 1,
+                    "conclusion": "FT"
+                }
+            ]
+        },
+        {
+            "date": "Tuesday 2nd April",
+            "fixtures": [
+                {
+                    "team_01": "Newcastle United",
+                    "score_team_01": 1,
+                    "team_02": "Everton",
+                    "score_team_02": 1,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Nottingham Forest",
+                    "score_team_01": 3,
+                    "team_02": "Fulham",
+                    "score_team_02": 1,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Burnley",
+                    "score_team_01": 1,
+                    "team_02": "Wolverhampton Wanderers",
+                    "score_team_02": 1,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "AFC Bournemouth",
+                    "score_team_01": 1,
+                    "team_02": "Crystal Palace",
+                    "score_team_02": 0,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "West Ham United",
+                    "score_team_01": 1,
+                    "team_02": "Tottenham Hotspur",
+                    "score_team_02": 1,
+                    "conclusion": "FT"
+                }
+            ]
+        },
+        {
+            "date": "Sunday 31st March",
+            "fixtures": [
+                {
+                    "team_01": "Liverpool",
+                    "score_team_01": 2,
+                    "team_02": "Brighton & Hove Albion",
+                    "score_team_02": 1,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Manchester City",
+                    "score_team_01": 0,
+                    "team_02": "Arsenal",
+                    "score_team_02": 0,
+                    "conclusion": "FT"
+                }
+            ]
+        },
+        {
+            "date": "Saturday 30th March",
+            "fixtures": [
+                {
+                    "team_01": "Newcastle United",
+                    "score_team_01": 4,
+                    "team_02": "West Ham United",
+                    "score_team_02": 3,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Sheffield United",
+                    "score_team_01": 3,
+                    "team_02": "Fulham",
+                    "score_team_02": 3,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Nottingham Forest",
+                    "score_team_01": 1,
+                    "team_02": "Crystal Palace",
+                    "score_team_02": 1,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Chelsea",
+                    "score_team_01": 2,
+                    "team_02": "Burnley",
+                    "score_team_02": 2,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Tottenham Hotspur",
+                    "score_team_01": 2,
+                    "team_02": "Luton Town",
+                    "score_team_02": 1,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "AFC Bournemouth",
+                    "score_team_01": 2,
+                    "team_02": "Everton",
+                    "score_team_02": 1,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Aston Villa",
+                    "score_team_01": 2,
+                    "team_02": "Wolverhampton Wanderers",
+                    "score_team_02": 0,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Brentford",
+                    "score_team_01": 1,
+                    "team_02": "Manchester United",
+                    "score_team_02": 1,
+                    "conclusion": "FT"
+                }
+            ]
+        },
+        {
+            "date": "Sunday 17th March",
+            "fixtures": [
+                {
+                    "team_01": "West Ham United",
+                    "score_team_01": 1,
+                    "team_02": "Aston Villa",
+                    "score_team_02": 1,
+                    "conclusion": "FT"
+                }
+            ]
+        },
+        {
+            "date": "Saturday 16th March",
+            "fixtures": [
+                {
+                    "team_01": "Luton Town",
+                    "score_team_01": 1,
+                    "team_02": "Nottingham Forest",
+                    "score_team_02": 1,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Burnley",
+                    "score_team_01": 2,
+                    "team_02": "Brentford",
+                    "score_team_02": 1,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Fulham",
+                    "score_team_01": 3,
+                    "team_02": "Tottenham Hotspur",
+                    "score_team_02": 0,
+                    "conclusion": "FT"
+                }
+            ]
+        },
+        {
+            "date": "Wednesday 13th March",
+            "fixtures": [
+                {
+                    "team_01": "AFC Bournemouth",
+                    "score_team_01": 4,
+                    "team_02": "Luton Town",
+                    "score_team_02": 3,
+                    "conclusion": "FT"
+                }
+            ]
+        },
+        {
+            "date": "Monday 11th March",
+            "fixtures": [
+                {
+                    "team_01": "Chelsea",
+                    "score_team_01": 3,
+                    "team_02": "Newcastle United",
+                    "score_team_02": 2,
+                    "conclusion": "FT"
+                }
+            ]
+        },
+        {
+            "date": "Sunday 10th March",
+            "fixtures": [
+                {
+                    "team_01": "Aston Villa",
+                    "score_team_01": 0,
+                    "team_02": "Tottenham Hotspur",
+                    "score_team_02": 4,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "West Ham United",
+                    "score_team_01": 2,
+                    "team_02": "Burnley",
+                    "score_team_02": 2,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Brighton & Hove Albion",
+                    "score_team_01": 1,
+                    "team_02": "Nottingham Forest",
+                    "score_team_02": 0,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Liverpool",
+                    "score_team_01": 1,
+                    "team_02": "Manchester City",
+                    "score_team_02": 1,
+                    "conclusion": "FT"
+                }
+            ]
+        },
+        {
+            "date": "Saturday 9th March",
+            "fixtures": [
+                {
+                    "team_01": "Manchester United",
+                    "score_team_01": 2,
+                    "team_02": "Everton",
+                    "score_team_02": 0,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Crystal Palace",
+                    "score_team_01": 1,
+                    "team_02": "Luton Town",
+                    "score_team_02": 1,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Wolverhampton Wanderers",
+                    "score_team_01": 2,
+                    "team_02": "Fulham",
+                    "score_team_02": 1,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "AFC Bournemouth",
+                    "score_team_01": 2,
+                    "team_02": "Sheffield United",
+                    "score_team_02": 2,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Arsenal",
+                    "score_team_01": 2,
+                    "team_02": "Brentford",
+                    "score_team_02": 1,
+                    "conclusion": "FT"
+                }
+            ]
+        },
+        {
+            "date": "Monday 4th March",
+            "fixtures": [
+                {
+                    "team_01": "Sheffield United",
+                    "score_team_01": 0,
+                    "team_02": "Arsenal",
+                    "score_team_02": 6,
+                    "conclusion": "FT"
+                }
+            ]
+        },
+        {
+            "date": "Sunday 3rd March",
+            "fixtures": [
+                {
+                    "team_01": "Burnley",
+                    "score_team_01": 0,
+                    "team_02": "AFC Bournemouth",
+                    "score_team_02": 2,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Manchester City",
+                    "score_team_01": 3,
+                    "team_02": "Manchester United",
+                    "score_team_02": 1,
+                    "conclusion": "FT"
+                }
+            ]
+        },
+        {
+            "date": "Saturday 2nd March",
+            "fixtures": [
+                {
+                    "team_01": "Tottenham Hotspur",
+                    "score_team_01": 3,
+                    "team_02": "Crystal Palace",
+                    "score_team_02": 1,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Nottingham Forest",
+                    "score_team_01": 0,
+                    "team_02": "Liverpool",
+                    "score_team_02": 1,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Newcastle United",
+                    "score_team_01": 3,
+                    "team_02": "Wolverhampton Wanderers",
+                    "score_team_02": 0,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Fulham",
+                    "score_team_01": 3,
+                    "team_02": "Brighton & Hove Albion",
+                    "score_team_02": 0,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Everton",
+                    "score_team_01": 1,
+                    "team_02": "West Ham United",
+                    "score_team_02": 3,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Brentford",
+                    "score_team_01": 2,
+                    "team_02": "Chelsea",
+                    "score_team_02": 2,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Luton Town",
+                    "score_team_01": 2,
+                    "team_02": "Aston Villa",
+                    "score_team_02": 3,
+                    "conclusion": "FT"
+                }
+            ]
+        },
+        {
+            "date": "Monday 26th February",
+            "fixtures": [
+                {
+                    "team_01": "West Ham United",
+                    "score_team_01": 4,
+                    "team_02": "Brentford",
+                    "score_team_02": 2,
+                    "conclusion": "FT"
+                }
+            ]
+        },
+        {
+            "date": "Sunday 25th February",
+            "fixtures": [
+                {
+                    "team_01": "Wolverhampton Wanderers",
+                    "score_team_01": 1,
+                    "team_02": "Sheffield United",
+                    "score_team_02": 0,
+                    "conclusion": "FT"
+                }
+            ]
+        },
+        {
+            "date": "Saturday 24th February",
+            "fixtures": [
+                {
+                    "team_01": "Manchester United",
+                    "score_team_01": 1,
+                    "team_02": "Fulham",
+                    "score_team_02": 2,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Aston Villa",
+                    "score_team_01": 4,
+                    "team_02": "Nottingham Forest",
+                    "score_team_02": 2,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Crystal Palace",
+                    "score_team_01": 3,
+                    "team_02": "Burnley",
+                    "score_team_02": 0,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Brighton & Hove Albion",
+                    "score_team_01": 1,
+                    "team_02": "Everton",
+                    "score_team_02": 1,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "AFC Bournemouth",
+                    "score_team_01": 0,
+                    "team_02": "Manchester City",
+                    "score_team_02": 1,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Arsenal",
+                    "score_team_01": 4,
+                    "team_02": "Newcastle United",
+                    "score_team_02": 1,
+                    "conclusion": "FT"
+                }
+            ]
+        },
+        {
+            "date": "Wednesday 21st February",
+            "fixtures": [
+                {
+                    "team_01": "Liverpool",
+                    "score_team_01": 4,
+                    "team_02": "Luton Town",
+                    "score_team_02": 1,
+                    "conclusion": "FT"
+                }
+            ]
+        },
+        {
+            "date": "Tuesday 20th February",
+            "fixtures": [
+                {
+                    "team_01": "Manchester City",
+                    "score_team_01": 1,
+                    "team_02": "Brentford",
+                    "score_team_02": 0,
+                    "conclusion": "FT"
+                }
+            ]
+        },
+        {
+            "date": "Monday 19th February",
+            "fixtures": [
+                {
+                    "team_01": "Everton",
+                    "score_team_01": 1,
+                    "team_02": "Crystal Palace",
+                    "score_team_02": 1,
+                    "conclusion": "FT"
+                }
+            ]
+        },
+        {
+            "date": "Sunday 18th February",
+            "fixtures": [
+                {
+                    "team_01": "Sheffield United",
+                    "score_team_01": 0,
+                    "team_02": "Brighton & Hove Albion",
+                    "score_team_02": 5,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Luton Town",
+                    "score_team_01": 1,
+                    "team_02": "Manchester United",
+                    "score_team_02": 2,
+                    "conclusion": "FT"
+                }
+            ]
+        },
+        {
+            "date": "Saturday 17th February",
+            "fixtures": [
+                {
+                    "team_01": "Brentford",
+                    "score_team_01": 1,
+                    "team_02": "Liverpool",
+                    "score_team_02": 4,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Burnley",
+                    "score_team_01": 0,
+                    "team_02": "Arsenal",
+                    "score_team_02": 5,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Fulham",
+                    "score_team_01": 1,
+                    "team_02": "Aston Villa",
+                    "score_team_02": 2,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Tottenham Hotspur",
+                    "score_team_01": 1,
+                    "team_02": "Wolverhampton Wanderers",
+                    "score_team_02": 2,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Nottingham Forest",
+                    "score_team_01": 2,
+                    "team_02": "West Ham United",
+                    "score_team_02": 0,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Newcastle United",
+                    "score_team_01": 2,
+                    "team_02": "AFC Bournemouth",
+                    "score_team_02": 2,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Manchester City",
+                    "score_team_01": 1,
+                    "team_02": "Chelsea",
+                    "score_team_02": 1,
+                    "conclusion": "FT"
+                }
+            ]
+        },
+        {
+            "date": "Monday 12th February",
+            "fixtures": [
+                {
+                    "team_01": "Crystal Palace",
+                    "score_team_01": 1,
+                    "team_02": "Chelsea",
+                    "score_team_02": 3,
+                    "conclusion": "FT"
+                }
+            ]
+        },
+        {
+            "date": "Sunday 11th February",
+            "fixtures": [
+                {
+                    "team_01": "West Ham United",
+                    "score_team_01": 0,
+                    "team_02": "Arsenal",
+                    "score_team_02": 6,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Aston Villa",
+                    "score_team_01": 1,
+                    "team_02": "Manchester United",
+                    "score_team_02": 2,
+                    "conclusion": "FT"
+                }
+            ]
+        },
+        {
+            "date": "Saturday 10th February",
+            "fixtures": [
+                {
+                    "team_01": "Manchester City",
+                    "score_team_01": 2,
+                    "team_02": "Everton",
+                    "score_team_02": 0,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Fulham",
+                    "score_team_01": 3,
+                    "team_02": "AFC Bournemouth",
+                    "score_team_02": 1,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Luton Town",
+                    "score_team_01": 1,
+                    "team_02": "Sheffield United",
+                    "score_team_02": 3,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Liverpool",
+                    "score_team_01": 3,
+                    "team_02": "Burnley",
+                    "score_team_02": 1,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Tottenham Hotspur",
+                    "score_team_01": 2,
+                    "team_02": "Brighton & Hove Albion",
+                    "score_team_02": 1,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Wolverhampton Wanderers",
+                    "score_team_01": 0,
+                    "team_02": "Brentford",
+                    "score_team_02": 2,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Nottingham Forest",
+                    "score_team_01": 2,
+                    "team_02": "Newcastle United",
+                    "score_team_02": 3,
+                    "conclusion": "FT"
+                }
+            ]
+        },
+        {
+            "date": "Monday 5th February",
+            "fixtures": [
+                {
+                    "team_01": "Brentford",
+                    "score_team_01": 1,
+                    "team_02": "Manchester City",
+                    "score_team_02": 3,
+                    "conclusion": "FT"
+                }
+            ]
+        },
+        {
+            "date": "Sunday 4th February",
+            "fixtures": [
+                {
+                    "team_01": "Chelsea",
+                    "score_team_01": 2,
+                    "team_02": "Wolverhampton Wanderers",
+                    "score_team_02": 4,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Manchester United",
+                    "score_team_01": 3,
+                    "team_02": "West Ham United",
+                    "score_team_02": 0,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "AFC Bournemouth",
+                    "score_team_01": 1,
+                    "team_02": "Nottingham Forest",
+                    "score_team_02": 1,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Arsenal",
+                    "score_team_01": 3,
+                    "team_02": "Liverpool",
+                    "score_team_02": 1,
+                    "conclusion": "FT"
+                }
+            ]
+        },
+        {
+            "date": "Saturday 3rd February",
+            "fixtures": [
+                {
+                    "team_01": "Everton",
+                    "score_team_01": 2,
+                    "team_02": "Tottenham Hotspur",
+                    "score_team_02": 2,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Newcastle United",
+                    "score_team_01": 4,
+                    "team_02": "Luton Town",
+                    "score_team_02": 4,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Burnley",
+                    "score_team_01": 2,
+                    "team_02": "Fulham",
+                    "score_team_02": 2,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Brighton & Hove Albion",
+                    "score_team_01": 4,
+                    "team_02": "Crystal Palace",
+                    "score_team_02": 1,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Sheffield United",
+                    "score_team_01": 0,
+                    "team_02": "Aston Villa",
+                    "score_team_02": 5,
+                    "conclusion": "FT"
+                }
+            ]
+        },
+        {
+            "date": "Thursday 1st February",
+            "fixtures": [
+                {
+                    "team_01": "West Ham United",
+                    "score_team_01": 1,
+                    "team_02": "AFC Bournemouth",
+                    "score_team_02": 1,
+                    "conclusion": "FT"
+                },
+                {
+                    "team_01": "Wolverhampton Wanderers",
+                    "score_team_01": 3,
+                    "team_02": "Manchester United",
+                    "score_team_02": 4,
+                    "conclusion": "FT"
+                }
+            ]
+        }
     ]
 }
