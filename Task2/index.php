@@ -22,7 +22,8 @@
     <h3>Football Teams Selection Form</h3>
     <div id="editSuccessMessage" style="display: none; color: green;">Successfully edited!</div>
     <div class="sketch">
-        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" id="teamsForm">
+         <input type="hidden" name="delete_team_iden" id="delete_team_iden">
             <table>
                 <thead>
                 <tr>
@@ -68,6 +69,8 @@
                     }
                 }
 
+                
+                    
                 // Initialize teams data array
                 $teams_data = [];
 
@@ -85,6 +88,41 @@
                         }
                     }
                 }
+                if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                    if (isset($_POST['delete_selected']) && isset($_POST['teams']) && is_array($_POST['teams'])) {
+                        $selected_teams = $_POST['teams'];
+                        foreach ($selected_teams as $team_id) {
+                            $sql = "DELETE FROM teams WHERE id = $team_id";
+                            $conn->query($sql);
+                        }
+                        header("Location: " . $_SERVER["PHP_SELF"]);
+                        exit;
+                    }
+                
+                    // Handle individual deletion
+
+if (isset($_POST['delete_team_iden'])) {
+    try {
+        // Establish database connection
+        // Assuming $conn is already initialized earlier
+        
+        $team_id = $_POST['delete_team_iden'];
+        $sql = "DELETE FROM teams WHERE id = $team_id";
+        
+        // Execute query
+        if ($conn->query($sql) === TRUE) {
+            header("Location: " . $_SERVER["PHP_SELF"]);
+            exit;
+        } else {
+            throw new Exception("Error deleting record: " . $conn->error);
+        }
+    } catch (Exception $e) {
+        echo "Error: " . $e->getMessage();
+    }
+}
+
+                }
+                
 
                 // Handle edit form submission
                 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['edit_team'])) {
@@ -152,10 +190,10 @@
     </div>
 
     <?php if (!empty($teams_data)): ?>
-        <div id="charts-container">
+        <div id="charts-container" style="width: 50%; height: 50%;">
             <?php foreach ($teams_data as $index => $team): ?>
                 <h4><?php echo $team['team']; ?></h4>
-                <canvas id="pieChart<?php echo $index; ?>" width="200" height="200"></canvas>
+                <canvas id="pieChart<?php echo $index; ?>"></canvas>
             <?php endforeach; ?>
             <?php if (count($teams_data) > 1): ?>
                 <canvas id="barChart"></canvas>
@@ -302,12 +340,9 @@ document.querySelector('form[action="<?php echo htmlspecialchars($_SERVER["PHP_S
     function deleteTeam(id) {
 const confirmation = confirm("Are you sure you want to delete this team?");
 if (confirmation) {
-    document.querySelector(`input[value='${id}'].select-row`).closest('tr').remove();
-    const deleteInput = document.createElement('input');
-    deleteInput.type = 'hidden';
-    deleteInput.name = 'teams[]';
-    deleteInput.value = id;
-    document.querySelector('form').appendChild(deleteInput);
+    document.getElementById('delete_team_iden').value = id;
+
+    document.getElementById('teamsForm').submit();
 }
 }
 
