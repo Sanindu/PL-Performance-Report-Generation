@@ -100,3 +100,223 @@ footer {
     background-color: #555;
     color: whitesmoke;
 }
+
+/* ----- styles.css --------------------- */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4CAF50;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+thead th {
+    background-color: #4CAF50;
+    color: #ffffff;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+th input[type="checkbox"] {
+    margin: 0;
+}
+
+input[type="checkbox"] {
+    transform: scale(1.2);
+    margin-right: 10px;
+}
+
+th, td {
+    border-right: 1px solid #ddd;
+}
+
+th:last-child, td:last-child {
+    border-right: none;
+}
+h4.team-name {
+    font-size: 40px; /* Adjust the font size as needed */
+    text-align: center; /* Center align the text */
+    margin-bottom: 10px; /* Space between the name and the chart */
+}
+
+
+
+
+/* Report Button */
+
+input[type="submit"][name="deletebuttonaction"] {
+    background-color: #e42c2c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px; /* Adjust the margin as needed */
+}
+
+input[type="submit"][name="deletebuttonaction"]:hover {
+    background-color: #841313;
+}
+
+/* Delete Button */
+
+input[type="submit"][name="generate_report"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px; /* Adjust the margin as needed */
+}
+
+input[type="submit"][name="generate_report"]:hover {
+    background-color: #0056b3;
+}
+
+/* Edit Button*/
+
+input[type="submit"][name="editbuttonaction"] {
+    background-color: #efbf20;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px; /* Adjust the margin as needed */
+}
+
+input[type="submit"][name="editbuttonaction"]:hover {
+    background-color: #bcc813;
+}
+
+/* CSS for the edit form modal */
+#editModal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    width: 300px; /* Adjust the width as needed */
+}
+
+#editModal h2 {
+    margin-top: 0;
+    margin-bottom: 10px; /* Add some margin at the bottom */
+}
+
+#editModal form {
+    display: flex;
+    flex-direction: column;
+}
+
+#editModal form label {
+    margin-bottom: 5px; /* Adjust the spacing between labels */
+}
+
+#editModal form input[type="text"],
+#editModal form input[type="number"] {
+    width: calc(100% - 20px); /* Adjust the width with padding */
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px; /* Add some margin at the bottom */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#editModal form input[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#editModal form input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+
+/* Add new Team Form*/
+
+
+/* CSS for the form */
+.sketchc form {
+    max-width: 400px; /* Adjust the maximum width of the form */
+    margin: 0 auto; /* Center the form horizontally */
+    padding: 20px; /* Add padding around the form */
+    border: 1px solid #ccc; /* Add a border to the form */
+    border-radius: 5px; /* Add rounded corners to the form */
+    background-color: #f9f9f9; /* Set background color for the form */
+}
+
+.sketchc form h3 {
+    text-align: center; /* Center the heading */
+}
+
+.sketchc form input[type="text"],
+.sketchc form input[type="number"],
+.sketchc form button {
+    width: 100%; /* Make input fields and button full width */
+    margin-bottom: 10px; /* Add spacing between elements */
+    padding: 10px; /* Add padding to input fields and button */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+    border: 1px solid #ccc; /* Add border to input fields and button */
+    border-radius: 5px; /* Add rounded corners to input fields and button */
+}
+
+.sketchc form input[type="text"]:focus,
+.sketchc form input[type="number"]:focus,
+.sketchc form button:focus {
+    outline: none; /* Remove default focus outline */
+    border-color: #007bff; /* Change border color on focus */
+}
+
+.sketchc form button {
+    background-color: #007bff; /* Set background color for the button */
+    color: #fff; /* Set text color for the button */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s; /* Add transition for smoother hover effect */
+}
+
+.sketchc form button:hover {
+    background-color: #0056b3; /* Change background color on hover */
+}

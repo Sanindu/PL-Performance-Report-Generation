@@ -3,7 +3,6 @@
     <head>
         <title>New Football Team</title>
         <link rel="stylesheet" href="layout.css">
-    <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <header>
@@ -17,7 +16,7 @@
         </nav>
         <main>
             <h3>Football Teams Entery Form</h3>
-            <div class="sketch">
+            <div class="sketchc">
             <form id="add-team-form" action="entryForm.php" method="POST">
                 
             <input type="text" name="team" placeholder="Team Name" required> <br><br>

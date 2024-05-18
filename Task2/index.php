@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Premier League Report</title>
     <link rel="stylesheet" href="layout.css">
-    <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
@@ -20,8 +19,8 @@
     </ul>
 </nav>
 <main>
-    <h3>Sample Football Teams Selection Form</h3>
-
+    <h3>Football Teams Selection Form</h3>
+    <div id="editSuccessMessage" style="display: none; color: green;">Successfully edited!</div>
     <div class="sketch">
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
             <table>
@@ -133,8 +132,8 @@
                         echo "<td>" . $row["against"] . "</td>";
                         echo "<td>" . $row["gd"] . "</td>";
                         echo "<td>" . $row["points"] . "</td>";
-                        echo "<td><button type='button' onclick='editTeam(" . json_encode($row) . ")'>Edit</button>
-                        <button type='button' onclick='deleteTeam(" . $row["id"] . ")'>Delete</button>
+                        echo "<td><button type='button' name = 'editbuttonaction' onclick='editTeam(" . json_encode($row) . ")'>Edit</button>
+                        <button type='button' name = 'deletebuttonaction' onclick='deleteTeam(" . $row["id"] . ")'>Delete</button>
                         
                         </td>";
                         echo "</tr>";
@@ -147,9 +146,9 @@
                 ?>
                 </tbody>
             </table>
-            <input type="submit" value="Create Report" name="generate_report"/>
-            <button type="submit" name="delete_selected" id="delete-selected" style="display:none;">Delete Selected</button>
+            <input type="submit" value="Create Report" id ="createreportbutton" name="generate_report"/>
         </form>
+        <br>
     </div>
 
     <?php if (!empty($teams_data)): ?>
@@ -289,7 +288,16 @@
         document.getElementById('edit_points').value = team.points;
 
         document.getElementById('editModal').style.display = 'block';
-    }
+
+    document.getElementById('editSuccessMessage').style.display = 'none'; // Hide the success message initially
+}
+
+document.querySelector('form[action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>"]').addEventListener('submit', function(event) {
+    // After form submission, show the success message if it was a successful edit
+    document.getElementById('editSuccessMessage').style.display = <?php echo isset($_POST['edit_team']) ? 'block' : 'none'; ?>;
+});
+
+    
 
     function deleteTeam(id) {
 const confirmation = confirm("Are you sure you want to delete this team?");
