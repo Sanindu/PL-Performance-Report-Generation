@@ -6,7 +6,6 @@
     <title>Premier League Report</title>
     <link rel="stylesheet" href="layout.css">
     <link rel="stylesheet" href="styles.css">
-    <!-- Include Chart.js library -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
@@ -17,7 +16,7 @@
 <nav>
     <ul>
         <li><a href="./index.php">Premier League Report</a></li>
-        <li><a href="./sampleEntryForm.html">Add New Football Team</a></li>
+        <li><a href="./entryForm.php">Add New Football Team</a></li>
     </ul>
 </nav>
 <main>
@@ -56,9 +55,24 @@
                     die("Connection failed: " . $conn->connect_error);
                 }
 
-                // Check if the form has been submitted and teams are selected
+                // Handle deletion of selected records
+                if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                    if (isset($_POST['delete_selected']) && isset($_POST['teams']) && is_array($_POST['teams'])) {
+                        $selected_teams = $_POST['teams'];
+                        foreach ($selected_teams as $team_id) {
+                            $sql = "DELETE FROM teams WHERE id = $team_id";
+                            $conn->query($sql);
+                        }
+                        header("Location: " . $_SERVER["PHP_SELF"]);
+                        exit;
+                    }
+                }
+
+                // Initialize teams data array
                 $teams_data = [];
-                if (isset($_POST['generate_report']) && isset($_POST['teams']) && is_array($_POST['teams'])) {
+
+                // Handle report generation
+                if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['generate_report']) && isset($_POST['teams']) && is_array($_POST['teams'])) {
                     $selected_teams = $_POST['teams'];
 
                     // Fetch data for selected teams
@@ -70,35 +84,18 @@
                             $teams_data[] = $row;
                         }
                     }
-
-                    // Generate HTML table for selected teams
-                    echo "<h2>Selected Teams Report</h2>";
-                    echo "<table border='1'>";
-                    echo "<tr><th>Team</th><th>Won</th><th>Drawn</th><th>Lost</th><th>For</th><th>Against</th><th>GD</th><th>Points</th></tr>";
-                    foreach ($teams_data as $team) {
-                        echo "<tr>";
-                        echo "<td>" . $team["team"] . "</td>";
-                        echo "<td>" . $team["won"] . "</td>";
-                        echo "<td>" . $team["drawn"] . "</td>";
-                        echo "<td>" . $team["lost"] . "</td>";
-                        echo "<td>" . $team["goalsfor"] . "</td>";
-                        echo "<td>" . $team["against"] . "</td>";
-                        echo "<td>" . $team["gd"] . "</td>";
-                        echo "<td>" . $team["points"] . "</td>";
-                        echo "</tr>";
-                    }
-                    echo "</table>";
                 }
 
-                // Fetch and display teams
-                $sql = "SELECT id, position, team, won, drawn, lost, goalsfor, against, gd, points FROM teams";
+                // Fetch and display teams sorted by points
+                $sql = "SELECT id, team, won, drawn, lost, goalsfor, against, gd, points FROM teams ORDER BY points DESC";
                 $result = $conn->query($sql);
 
                 if ($result->num_rows > 0) {
+                    $position = 1;
                     while ($row = $result->fetch_assoc()) {
                         echo "<tr>";
                         echo "<td><input type='checkbox' name='teams[]' class='select-row' value='" . $row["id"] . "'></td>";
-                        echo "<td>" . $row["position"] . "</td>";
+                        echo "<td>" . $position++ . "</td>";
                         echo "<td>" . $row["team"] . "</td>";
                         echo "<td>" . $row["won"] . "</td>";
                         echo "<td>" . $row["drawn"] . "</td>";
@@ -118,6 +115,7 @@
                 </tbody>
             </table>
             <input type="submit" value="Create Report" name="generate_report"/>
+            <button type="submit" name="delete_selected" id="delete-selected" style="display:none;">Delete Selected</button>
         </form>
     </div>
 
@@ -138,16 +136,14 @@
                 const pieCtx = document.getElementById('pieChart' + index).getContext('2d');
                 const totalMatches = team.won + team.drawn + team.lost;
 
-                // Prepare data for pie chart
                 const pieData = {
                     labels: ['Won', 'Drawn', 'Lost'],
                     datasets: [{
                         data: [team.won, team.drawn, team.lost],
-                        backgroundColor: ['#36a2eb', '#ffcd56', '#ff6384'],
+                        backgroundColor: ['#006400', '#F4BC1C', '#8b0000'],
                     }]
                 };
 
-                // Create pie chart
                 new Chart(pieCtx, {
                     type: 'pie',
                     data: pieData,
@@ -173,7 +169,6 @@
                 });
             });
 
-            // Only create bar chart if more than one team is selected
             if (teamsData.length > 1) {
                 const barCtx = document.getElementById('barChart').getContext('2d');
                 const barData = {
@@ -182,22 +177,21 @@
                         {
                             label: 'Won',
                             data: teamsData.map(team => team.won),
-                            backgroundColor: '#36a2eb'
+                            backgroundColor: '#006400'
                         },
                         {
                             label: 'Drawn',
                             data: teamsData.map(team => team.drawn),
-                            backgroundColor: '#ffcd56'
+                            backgroundColor: '#F4BC1C'
                         },
                         {
                             label: 'Lost',
                             data: teamsData.map(team => team.lost),
-                            backgroundColor: '#ff6384'
+                            backgroundColor: '#8b0000'
                         }
                     ]
                 };
 
-                // Create bar chart
                 new Chart(barCtx, {
                     type: 'bar',
                     data: barData,
@@ -224,7 +218,20 @@
         for (var checkbox of checkboxes) {
             checkbox.checked = this.checked;
         }
+        toggleDeleteButton();
     });
+
+    var checkboxes = document.querySelectorAll('.select-row');
+    for (var checkbox of checkboxes) {
+        checkbox.addEventListener('change', function() {
+            toggleDeleteButton();
+        });
+    }
+
+    function toggleDeleteButton() {
+        var selected = document.querySelectorAll('.select-row:checked').length > 0;
+        document.getElementById('delete-selected').style.display = selected ? 'inline' : 'none';
+    }
 </script>
 </body>
 </html>
