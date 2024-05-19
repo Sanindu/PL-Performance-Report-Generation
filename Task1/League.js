@@ -1,77 +1,114 @@
-function fetchData(callback) {
-    const xhr = new XMLHttpRequest();
-    xhr.open('GET', 'League.json', true);
-    xhr.onload = function () {
-        if (xhr.status === 200) {
-            const data = JSON.parse(xhr.responseText);
-            callback(data);
-        } else {
-            console.error('Error fetching data');
+// Function to make Ajax request
+function makeAjaxRequest(url, callback) {
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function() {
+        // Check if the request is complete
+        if (xhr.readyState === 4) {
+            // Check if the request was successful
+            if (xhr.status === 200) {
+                try {
+                    // Parse the JSON response
+                    var data = JSON.parse(xhr.responseText);
+                    // Call the callback function with the parsed data
+                    callback(null, data);
+                } catch (error) {
+                    // Call the callback function with the error
+                    callback(error, null);
+                }
+            } else {
+                // Call the callback function with an error if the request failed
+                callback(new Error('Request failed'), null);
+            }
         }
     };
+    // Open a GET request to the specified URL
+    xhr.open('GET', url, true);
+    // Send the request
     xhr.send();
 }
 
+// Calculate points for each team
 function calculatePoints(won, drawn) {
-    return won * 3 + drawn;
+    return (won * 3) + drawn;
 }
 
-function updateLeagueTable(data) {
-    const table = document.getElementById('league-table');
-    table.innerHTML = ''; // Clear previous content
-
-    // Create table header
-    const header = table.insertRow();
-    ['Team', 'Played', 'Won', 'Drawn', 'Lost', 'Goals For', 'Goals Against', 'Goal Difference', 'Points'].forEach(text => {
-        const cell = header.insertCell();
-        cell.innerText = text;
-    });
-
-    // Create table rows
-    data.premier_league_table.forEach(team => {
-        const row = table.insertRow();
-        ['team', 'played', 'won', 'drawn', 'lost', 'for', 'against', 'gd', 'points'].forEach(key => {
-            const cell = row.insertCell();
-            cell.innerText = team[key];
-        });
+// Update the points in the league table data
+function updatePoints(data) {
+    // Iterate through each team and update their points
+    data.forEach(function(team) {
+        team.points = calculatePoints(team.won, team.drawn);
     });
 }
 
-function updateTopScorersTable(data) {
-    const table = document.getElementById('topscorers-table');
-    table.innerHTML = ''; // Clear previous content
-
-    // Create table header
-    const header = table.insertRow();
-    ['Name', 'Team', 'Goals', 'Assists', 'Played', 'Goals per 90', 'Mins per Goal', 'Total Shots', 'Goal Conversion', 'Shot Accuracy'].forEach(text => {
-        const cell = header.insertCell();
-        cell.innerText = text;
-    });
-
-    // Create table rows
-    data.top_scorers.forEach(player => {
-        const row = table.insertRow();
-        ['name', 'team', 'goals', 'assists', 'played', 'goals_per_90', 'mins_per_goal', 'total_shots', 'goal_conversion', 'shot_accuracy'].forEach(key => {
-            const cell = row.insertCell();
-            cell.innerText = player[key];
-        });
+// Fetch Premier League table data from JSON file
+function fetchPremierLeagueTableData() {
+    // Make an Ajax request to fetch the league table data
+    makeAjaxRequest('League.json', function(error, data) {
+        if (error) {
+            // Log an error message if data fetching fails
+            console.error('Error fetching Premier League table data:', error);
+        } else {
+            // Update the points for each team
+            updatePoints(data.premier_league_table);
+            // Display the updated league table
+            displayPremierLeagueTable(data.premier_league_table);
+        }
     });
 }
 
-function updateTables() {
-    fetchData(data => {
-        data.premier_league_table.forEach(team => {
-            team.points = calculatePoints(team.won, team.drawn); // Update points dynamically
-        });
-        console.log("Coming here 0");
-        updateTopScorersTable(data);
-        console.log("Coming here 1");
-        updateLeagueTable(data);
-        console.log("Coming here 2");
+// Display Premier League table data
+function displayPremierLeagueTable(data) {
+    // Get the table element by its ID
+    var table = document.getElementById('premier-league-table');
+    // Set the table headers
+    table.innerHTML = '<thead><tr><th>Team</th><th>Played</th><th>Won</th><th>Drawn</th><th>Lost</th><th>For</th><th>Against</th><th>GD</th><th>Points</th></tr></thead>';
+    // Create a new tbody element
+    var tbody = document.createElement('tbody');
 
+    // Loop through the data array and create table rows for each team
+    data.forEach(function(team) {
+        var row = `<tr>
+                        <td>${team.team}</td>
+                        <td>${team.played}</td>
+                        <td>${team.won}</td>
+                        <td>${team.drawn}</td>
+                        <td>${team.lost}</td>
+                        <td>${team.for}</td>
+                        <td>${team.against}</td>
+                        <td>${team.gd}</td>
+                        <td>${team.points}</td>
+                    </tr>`;
+        // Add the row to the tbody
+        tbody.innerHTML += row;
     });
 
-    setTimeout(updateTables, 3); // Update every 30 seconds
+    // Append the tbody to the table
+    table.appendChild(tbody);
 }
 
-document.addEventListener('DOMContentLoaded', updateTables);
+// Update Premier League table every 1 hour
+function updateTablePeriodically() {
+    // Fetch and display the Premier League table data
+    fetchPremierLeagueTableData();
+    // Set a timeout to update the table again after  1 hour
+    setTimeout(updateTablePeriodically, 3600000);
+}
+
+// Initial setup for Premier League table
+function initPremierLeagueTable() {
+    // Fetch and display the Premier League table data
+    fetchPremierLeagueTableData();
+    // Update the Premier League table periodically
+    updateTablePeriodically();
+}
+
+// Call the init function when the window loads
+window.onload = function() {
+    try {
+        // Initialize the Premier League table setup
+        initPremierLeagueTable();
+    } catch (error) {
+        // Log any errors that occur during initialization
+        console.error('An error occurred:', error);
+    }
+};

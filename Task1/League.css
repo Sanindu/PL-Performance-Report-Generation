@@ -1,36 +1,60 @@
+/* General styles for the entire webpage */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
-    background-color: #f0f0f0;
+    font-family: Arial, sans-serif; /* Sets the font for the webpage */
+    margin: 0; /* Removes the default margin */
+    padding: 0; /* Removes the default padding */
 }
 
-h1 {
-    text-align: center;
+/* Styles for the header section */
+header {
+    background-color: #333; /* Dark background color for the header */
+    color: #fff; /* White text color for the header */
+    padding: 20px; /* Adds padding inside the header */
+    text-align: center; /* Centers the header text */
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-    background-color: #fff;
+/* Styles for the main content area */
+main {
+    padding: 20px; /* Adds padding inside the main content area */
 }
 
-th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: center;
+/* Styles for the footer section */
+footer {
+    background-color: #333; /* Dark background color for the footer */
+    color: #fff; /* White text color for the footer */
+    padding: 10px 20px; /* Adds padding inside the footer */
+    text-align: center; /* Centers the footer text */
+    position: fixed; /* Fixes the footer at the bottom of the page */
+    bottom: 0; /* Positions the footer at the very bottom */
+    width: 100%; /* Makes the footer span the entire width of the page */
 }
 
-th {
-    background-color: #4CAF50;
-    color: white;
+/* Style for the Premier League table */
+#premier-league-table {
+    width: 100%; /* Makes the table span the entire width of its container */
+    border-collapse: collapse; /* Collapses table borders into a single border */
 }
 
-tr:nth-child(even) {
-    background-color: #f2f2f2;
+/* Styles for table headers and cells */
+#premier-league-table th,
+#premier-league-table td {
+    border: 1px solid #ddd; /* Adds a light gray border around cells */
+    padding: 8px; /* Adds padding inside table cells */
+    text-align: center; /* Centers the text inside table cells */
 }
 
-tr:hover {
-    background-color: #ddd;
+/* Styles for table headers */
+#premier-league-table th {
+    background-color: #f2f2f2; /* Light gray background color for headers */
+    color: #333; /* Dark gray text color for headers */
+}
+
+/* Styles for even-numbered table rows */
+#premier-league-table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light gray background color for even rows */
+}
+
+/* Styles for table rows on hover */
+#premier-league-table tr:hover {
+    background-color: #ddd; /* Darker gray background color when hovering over a row */
 }
