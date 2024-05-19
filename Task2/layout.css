@@ -1,306 +1,262 @@
 body {
-    display: grid;
-    font-family: Arial, sans-serif;
-    grid-template-columns: 15% 85%;
-    grid-template-rows: auto;
-    grid-template-areas: "header header"
-                            "nav main"
-                            "footer footer";                           
+    display: grid; /* Use CSS grid layout for the body */
+    font-family: Arial, sans-serif; /* Set font family for the body */
+    grid-template-columns: 15% 85%; /* Define the width ratio of grid columns */
+    grid-template-rows: auto; /* Automatically size grid rows based on content */
+    grid-template-areas: "header header" "nav main" "footer footer"; /* Define the grid areas for the body */
+    margin: 20px; /* Set margin for the body */
+    background-color: #f4f4f9; /* Set background color for the body */
+    color: #333; /* Set text color for the body */
 }
 
 header {
-    background-color: #555;
-    color: white;
-    padding: 10px;
-    grid-area: header;
+    background-color: #555; /* Set background color for the header */
+    color: white; /* Set text color for the header */
+    padding: 10px; /* Set padding for the header */
+    grid-area: header; /* Assign the header to the grid area defined in the body */
 }
 
 nav {
-    background-color: whitesmoke;
-    color: black;
-    grid-area: nav;
+    background-color: whitesmoke; /* Set background color for the navigation */
+    color: black; /* Set text color for the navigation */
+    grid-area: nav; /* Assign the navigation to the grid area defined in the body */
 }
 
-nav > ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    border-right: 2%;
-    border-color: whitesmoke;
-    border-style: solid;
-    /*width: 10%;*/
-    background-color: whitesmoke;
-  }
-  
-nav > ul li a {
-    display: block;
-    color: #000;
-    padding: 8px 16px;
-    text-decoration: none;
+nav>ul {
+    list-style-type: none; /* Remove list bullet points from the navigation */
+    margin: 0; /* Remove margin from the navigation */
+    padding: 0; /* Remove padding from the navigation */
+    border-right: 2%; /* Set a right border for the navigation */
+    border-color: whitesmoke; /* Set border color for the navigation */
+    border-style: solid; /* Set border style for the navigation */
+    background-color: whitesmoke; /* Set background color for the navigation */
 }
-  
+
+nav>ul li a {
+    display: block; /* Display links as block elements within the navigation */
+    color: #000; /* Set text color for the navigation links */
+    padding: 8px 16px; /* Set padding for the navigation links */
+    text-decoration: none; /* Remove underline from the navigation links */
+}
+
 /* Change the link color on hover */
-nav > ul li a:hover {
-    background-color: #555;
-    color: whitesmoke;
+nav>ul li a:hover {
+    background-color: #555; /* Set background color for the navigation links on hover */
+    color: whitesmoke; /* Set text color for the navigation links on hover */
 }
 
 main {
-    background-color: whitesmoke;
-    color: black;
-    margin-left: 1em;
-    padding-left: 1em;
-    grid-area: main;
+    background-color: whitesmoke; /* Set background color for the main content */
+    color: black; /* Set text color for the main content */
+    margin-left: 1em; /* Set left margin for the main content */
+    padding-left: 1em; /* Set left padding for the main content */
+    grid-area: main; /* Assign the main content to the grid area defined in the body */
 }
 
 footer {
-    padding-top: 2em;
-    background-color: #555;
-    color: white;
-    grid-area: footer;
+    padding-top: 2em; /* Set top padding for the footer */
+    background-color: #555; /* Set background color for the footer */
+    color: white; /* Set text color for the footer */
+    grid-area: footer; /* Assign the footer to the grid area defined in the body */
 }
 
 .note {
-    color: red;
-    font-size: 12pt;
-    font-family: Arial, Helvetica, sans-serif;
-    padding-top: 1em;
+    color: red; /* Set text color for elements with class 'note' */
+    font-size: 12pt; /* Set font size for elements with class 'note' */
+    font-family: Arial, Helvetica, sans-serif; /* Set font family for elements with class 'note' */
+    padding-top: 1em; /* Set top padding for elements with class 'note' */
 }
 
 .blueNote {
-    color: blue;
-    font-size: 12pt;
-    font-family: Arial, Helvetica, sans-serif;
-    padding-top: 1em;
-    font-weight: bold;
+    color: blue; /* Set text color for elements with class 'blueNote' */
+    font-size: 12pt; /* Set font size for elements with class 'blueNote' */
+    font-family: Arial, Helvetica, sans-serif; /* Set font family for elements with class 'blueNote' */
+    padding-top: 1em; /* Set top padding for elements with class 'blueNote' */
+    font-weight: bold; /* Set font weight for elements with class 'blueNote' */
 }
 
 .sketch img {
-    width: 60%;
-    height: auto;
+    width: 60%; /* Set width for images within elements with class 'sketch' */
+    height: auto; /* Set height to auto for images within elements with class 'sketch' */
 }
 
-.addmore > input {
-    display:block;
-    float: left;
-    margin: 0 2em 2em 2em;
-    padding: 0.5em 5em;
-    text-decoration: none;
-    background-color: whitesmoke;
-    color:#555;
+.addmore>input {
+    display: block; /* Display inputs as block elements within elements with class 'addmore' */
+    float: left; /* Float inputs to the left within elements with class 'addmore' */
+    margin: 0 2em 2em 2em; /* Set margin for inputs within elements with class 'addmore' */
+    padding: 0.5em 5em; /* Set padding for inputs within elements with class 'addmore' */
+    text-decoration: none; /* Remove underline from inputs within elements with class 'addmore' */
+    background-color: whitesmoke; /* Set background color for inputs within elements with class 'addmore' */
+    color: #555; /* Set text color for inputs within elements with class 'addmore' */
 }
 
 /* Change the link color on hover */
-.addmore > input:hover {
-    display:block;
-    float: left;
-    margin: 0 2em 2em 2em;
-    padding: 0.5em 5em;
-    text-decoration: none;
-    background-color: #555;
-    color: whitesmoke;
+.addmore>input:hover {
+    background-color: #555; /* Set background color for inputs within elements with class 'addmore' on hover */
+    color: whitesmoke; /* Set text color for inputs within elements with class 'addmore' on hover */
 }
 
-/* ----- styles.css --------------------- */
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    background-color: #f4f4f9;
-    color: #333;
-}
-
+/* Styles for h1 */
 h1 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #4CAF50;
+    text-align: center; /* Center align h1 */
+    margin-bottom: 20px; /* Add bottom margin to h1 */
+    color: #4CAF50; /* Set color for h1 */
 }
 
+/* Styles for table */
 table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-    font-size: 16px;
-    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
-    background-color: #ffffff;
+    width: 100%; /* Set table width to 100% */
+    border-collapse: collapse; /* Collapse table borders */
+    margin: 20px 0; /* Add margin above and below the table */
+    font-size: 16px; /* Set font size for table */
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1); /* Add box shadow to table */
+    background-color: #ffffff; /* Set background color for table */
 }
 
-th, td {
-    padding: 12px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
+/* Styles for th and td */
+th,
+td {
+    padding: 12px; /* Set padding for th and td */
+    text-align: left; /* Align text to the left for th and td */
+    border-bottom: 1px solid #ddd; /* Add bottom border to th and td */
 }
 
+/* Styles for thead th */
 thead th {
-    background-color: #4CAF50;
-    color: #ffffff;
+    background-color: #4CAF50; /* Set background color for thead th */
+    color: #ffffff; /* Set text color for thead th */
 }
 
+/* Styles for even rows in tbody */
 tbody tr:nth-child(even) {
-    background-color: #f9f9f9;
+    background-color: #f9f9f9; /* Set background color for even rows in tbody */
 }
 
+/* Styles for hovered rows in tbody */
 tbody tr:hover {
-    background-color: #f1f1f1;
+    background-color: #f1f1f1; /* Set background color for hovered rows in tbody */
 }
 
+/* Styles for checkboxes in th */
 th input[type="checkbox"] {
-    margin: 0;
+    margin: 0; /* Remove margin for checkboxes in th */
 }
 
+/* Styles for all checkboxes */
 input[type="checkbox"] {
-    transform: scale(1.2);
-    margin-right: 10px;
+    transform: scale(1.2); /* Increase checkbox size */
+    margin-right: 10px; /* Add margin to the right of checkboxes */
 }
 
-th, td {
-    border-right: 1px solid #ddd;
+th,
+td {
+    border-right: 1px solid #ddd; /* Add right border to th and td */
 }
 
-th:last-child, td:last-child {
-    border-right: none;
+th:last-child,
+td:last-child {
+    border-right: none; /* Remove right border for last-child th and td */
 }
+
 h4.team-name {
-    font-size: 40px; /* Adjust the font size as needed */
-    text-align: center; /* Center align the text */
-    margin-bottom: 10px; /* Space between the name and the chart */
+    font-size: 40px; /* Set font size for h4 */
+    text-align: center; /* Center align text for h4 */
+    margin-bottom: 10px; /* Add bottom margin to h4 */
 }
 
-
-
-
-/* Report Button */
-
-input[type="submit"][name="deletebuttonaction"] {
-    background-color: #e42c2c;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    margin-top: 10px; /* Adjust the margin as needed */
-}
-
-input[type="submit"][name="deletebuttonaction"]:hover {
-    background-color: #841313;
-}
-
-/* Delete Button */
-
+/* Styles for Report Button */
 input[type="submit"][name="generate_report"] {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    margin-top: 10px; /* Adjust the margin as needed */
+    background-color: #007bff; /* Set background color for generate_report button */
+    color: white; /* Set text color for generate_report button */
+    padding: 10px 20px; /* Set padding for generate_report button */
+    border: none; /* Remove border for generate_report button */
+    border-radius: 5px; /* Add border radius to generate_report button */
+    cursor: pointer; /* Set cursor to pointer for generate_report button */
+    transition: background-color 0.3s; /* Add transition for smoother hover effect */
+    margin-top: 10px; /* Add top margin to generate_report button */
 }
 
 input[type="submit"][name="generate_report"]:hover {
-    background-color: #0056b3;
+    background-color: #0056b3; /* Change background color on hover for generate_report button */
 }
 
-/* Edit Button*/
-
-input[type="submit"][name="editbuttonaction"] {
-    background-color: #efbf20;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    margin-top: 10px; /* Adjust the margin as needed */
-}
-
-input[type="submit"][name="editbuttonaction"]:hover {
-    background-color: #bcc813;
-}
-
-/* CSS for the edit form modal */
+/* Styles for the edit form modal */
 #editModal {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    padding: 20px;
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-    width: 300px; /* Adjust the width as needed */
+    display: none; /* Hide edit modal by default */
+    position: fixed; /* Position edit modal as fixed */
+    top: 50%; /* Align edit modal to the center vertically */
+    left: 50%; /* Align edit modal to the center horizontally */
+    transform: translate(-50%, -50%); /* Center edit modal */
+    background-color: white; /* Set background color for edit modal */
+    padding: 20px; /* Set padding for edit modal */
+    border: 2px solid #ccc; /* Add border to edit modal */
+    border-radius: 10px; /* Add border radius to edit modal */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow to edit modal */
+    z-index: 1000; /* Set z-index for edit modal */
+    width: 300px; /* Set width for edit modal */
 }
 
 #editModal h2 {
-    margin-top: 0;
-    margin-bottom: 10px; /* Add some margin at the bottom */
+    margin-top: 0; /* Remove top margin for h2 */
+    margin-bottom: 10px; /* Add bottom margin for h2 */
 }
 
 #editModal form {
-    display: flex;
-    flex-direction: column;
+    display: flex; /* Display form as flex container */
+    flex-direction: column; /* Set flex direction to column */
 }
 
 #editModal form label {
-    margin-bottom: 5px; /* Adjust the spacing between labels */
+    margin-bottom: 5px; /* Add bottom margin for labels */
 }
 
 #editModal form input[type="text"],
 #editModal form input[type="number"] {
-    width: calc(100% - 20px); /* Adjust the width with padding */
-    padding: 8px;
-    margin-top: 5px;
-    margin-bottom: 10px; /* Add some margin at the bottom */
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    width: calc(100% - 20px); /* Set width for inputs with padding */
+    padding: 8px; /* Set padding for inputs */
+    margin-top: 5px; /* Add top margin for inputs */
+    margin-bottom: 10px; /* Add bottom margin for inputs */
+    border: 1px solid #ccc; /* Add border to inputs */
+    border-radius: 5px; /* Add border radius to inputs */
 }
 
 #editModal form input[type="submit"] {
-    background-color: #28a745;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    background-color: #28a745; /* Set background color for submit button */
+    color: white; /* Set text color for submit button */
+    padding: 10px; /* Set padding for submit button */
+    border: none; /* Remove border for submit button */
+    border-radius: 5px; /* Add border radius to submit button */
+    cursor: pointer; /* Set cursor to pointer for submit button */
+    transition: background-color 0.3s; /* Add transition for smoother hover effect */
 }
 
 #editModal form input[type="submit"]:hover {
-    background-color: #218838;
+    background-color: #218838; /* Change background color on hover for submit button */
 }
 
-
-/* Add new Team Form*/
-
-
-/* CSS for the form */
+/* CSS for the add new Team Form */
 .sketchc form {
-    max-width: 400px; /* Adjust the maximum width of the form */
+    max-width: 400px; /* Set maximum width for form */
     margin: 0 auto; /* Center the form horizontally */
     padding: 20px; /* Add padding around the form */
-    border: 1px solid #ccc; /* Add a border to the form */
-    border-radius: 5px; /* Add rounded corners to the form */
+    border: 1px solid #ccc; /* Add border to the form */
+    border-radius: 5px; /* Add border radius to the form */
     background-color: #f9f9f9; /* Set background color for the form */
 }
 
 .sketchc form h3 {
-    text-align: center; /* Center the heading */
+    text-align: center; /* Center align text for h3 */
 }
 
 .sketchc form input[type="text"],
 .sketchc form input[type="number"],
 .sketchc form button {
-    width: 100%; /* Make input fields and button full width */
-    margin-bottom: 10px; /* Add spacing between elements */
-    padding: 10px; /* Add padding to input fields and button */
+    width: 100%; /* Make inputs and button full width */
+    margin-bottom: 10px; /* Add bottom margin for inputs and button */
+    padding: 10px; /* Add padding to inputs and button */
     box-sizing: border-box; /* Include padding and border in the element's total width */
-    border: 1px solid #ccc; /* Add border to input fields and button */
-    border-radius: 5px; /* Add rounded corners to input fields and button */
+    border: 1px solid #ccc; /* Add border to inputs and button */
+    border-radius: 5px; /* Add border radius to inputs and button */
 }
 
 .sketchc form input[type="text"]:focus,
@@ -311,12 +267,12 @@ input[type="submit"][name="editbuttonaction"]:hover {
 }
 
 .sketchc form button {
-    background-color: #007bff; /* Set background color for the button */
-    color: #fff; /* Set text color for the button */
-    cursor: pointer; /* Change cursor to pointer on hover */
+    background-color: #007bff; /* Set background color for button */
+    color: #fff; /* Set text color for button */
+    cursor: pointer; /* Set cursor to pointer for button */
     transition: background-color 0.3s; /* Add transition for smoother hover effect */
 }
 
 .sketchc form button:hover {
-    background-color: #0056b3; /* Change background color on hover */
+    background-color: #0056b3; /* Change background color on hover for button */
 }
