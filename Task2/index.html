@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Declares the character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Sets the viewport width and initial scale for mobile responsiveness -->
+    <title>Login</title> <!-- Sets the title of the webpage -->
+    <link rel="stylesheet" href="login.css"> <!-- Links an external stylesheet -->
+</head>
+<body>
+    <div class="login-container"> <!-- Container for the login form -->
+        <h2>Login</h2> <!-- Heading for the login section -->
+        <form id="loginForm"> <!-- Login form with unique id -->
+            <input type="text" name="username" placeholder="Username" required> <!-- Input field for username -->
+            <input type="password" name="password" placeholder="Password" required> <!-- Input field for password -->
+            <input type="submit" value="Login"> <!-- Submit button for login -->
+        </form>
+        <div id="message"></div> <!-- Div to display error message -->
+        <div> 
+            For the DEMO Purpose shown the Login Details <br> <!-- Informational message -->
+            Username: admin <br> <!-- Username for demo -->
+            Password: admin</div> <!-- Password for demo -->
+    </div>
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            // Get form data
+            var formData = new FormData(this);
+
+            // Send AJAX request
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", "login.php", true);
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    var response = xhr.responseText.trim();
+                    if (response === "success") {
+                        // Redirect to report.php
+                        window.location.href = "report.php";
+                    } else {
+                        document.getElementById("message").innerHTML = "<p style='color: red; text-align: center;'>Invalid username or password</p>";
+                    }
+                }
+            };
+            xhr.send(formData);
+        });
+    </script> <!-- Script to handle form submission and AJAX request -->
+</body>
+<!-- References:
+Mozilla Developer Network. (n.d.). Using FormData Objects. Retrieved from https://developer.mozilla.org/en-US/docs/Web/API/FormData/Using_FormData_Objects
+Mozilla Developer Network. (n.d.). XMLHttpRequest. Retrieved from https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest-->
+</html>
+
