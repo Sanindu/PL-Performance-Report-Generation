@@ -1076,7 +1076,7 @@
         },
         {
             "date": "Wednesday 3rd April",
-            "fixtures": [
+            "matches": [
                 {
                     "team_01": "Arsenal",
                     "score_team_01": 2,
@@ -1102,7 +1102,7 @@
         },
         {
             "date": "Tuesday 2nd April",
-            "fixtures": [
+            "matches": [
                 {
                     "team_01": "Newcastle United",
                     "score_team_01": 1,
@@ -1142,7 +1142,7 @@
         },
         {
             "date": "Sunday 31st March",
-            "fixtures": [
+            "matches": [
                 {
                     "team_01": "Liverpool",
                     "score_team_01": 2,
@@ -1161,7 +1161,7 @@
         },
         {
             "date": "Saturday 30th March",
-            "fixtures": [
+            "matches": [
                 {
                     "team_01": "Newcastle United",
                     "score_team_01": 4,
@@ -1222,7 +1222,7 @@
         },
         {
             "date": "Sunday 17th March",
-            "fixtures": [
+            "matches": [
                 {
                     "team_01": "West Ham United",
                     "score_team_01": 1,
@@ -1234,7 +1234,7 @@
         },
         {
             "date": "Saturday 16th March",
-            "fixtures": [
+            "matches": [
                 {
                     "team_01": "Luton Town",
                     "score_team_01": 1,
@@ -1260,7 +1260,7 @@
         },
         {
             "date": "Wednesday 13th March",
-            "fixtures": [
+            "matches": [
                 {
                     "team_01": "AFC Bournemouth",
                     "score_team_01": 4,
@@ -1272,7 +1272,7 @@
         },
         {
             "date": "Monday 11th March",
-            "fixtures": [
+            "matches": [
                 {
                     "team_01": "Chelsea",
                     "score_team_01": 3,
@@ -1284,7 +1284,7 @@
         },
         {
             "date": "Sunday 10th March",
-            "fixtures": [
+            "matches": [
                 {
                     "team_01": "Aston Villa",
                     "score_team_01": 0,
@@ -1317,7 +1317,7 @@
         },
         {
             "date": "Saturday 9th March",
-            "fixtures": [
+            "matches": [
                 {
                     "team_01": "Manchester United",
                     "score_team_01": 2,
@@ -1357,7 +1357,7 @@
         },
         {
             "date": "Monday 4th March",
-            "fixtures": [
+            "matches": [
                 {
                     "team_01": "Sheffield United",
                     "score_team_01": 0,
@@ -1369,7 +1369,7 @@
         },
         {
             "date": "Sunday 3rd March",
-            "fixtures": [
+            "matches": [
                 {
                     "team_01": "Burnley",
                     "score_team_01": 0,
@@ -1388,7 +1388,7 @@
         },
         {
             "date": "Saturday 2nd March",
-            "fixtures": [
+            "matches": [
                 {
                     "team_01": "Tottenham Hotspur",
                     "score_team_01": 3,
@@ -1442,7 +1442,7 @@
         },
         {
             "date": "Monday 26th February",
-            "fixtures": [
+            "matches": [
                 {
                     "team_01": "West Ham United",
                     "score_team_01": 4,
@@ -1454,7 +1454,7 @@
         },
         {
             "date": "Sunday 25th February",
-            "fixtures": [
+            "matches": [
                 {
                     "team_01": "Wolverhampton Wanderers",
                     "score_team_01": 1,
@@ -1466,7 +1466,7 @@
         },
         {
             "date": "Saturday 24th February",
-            "fixtures": [
+            "matches": [
                 {
                     "team_01": "Manchester United",
                     "score_team_01": 1,
@@ -1513,7 +1513,7 @@
         },
         {
             "date": "Wednesday 21st February",
-            "fixtures": [
+            "matches": [
                 {
                     "team_01": "Liverpool",
                     "score_team_01": 4,
@@ -1525,7 +1525,7 @@
         },
         {
             "date": "Tuesday 20th February",
-            "fixtures": [
+            "matches": [
                 {
                     "team_01": "Manchester City",
                     "score_team_01": 1,
@@ -1537,7 +1537,7 @@
         },
         {
             "date": "Monday 19th February",
-            "fixtures": [
+            "matches": [
                 {
                     "team_01": "Everton",
                     "score_team_01": 1,
@@ -1549,7 +1549,7 @@
         },
         {
             "date": "Sunday 18th February",
-            "fixtures": [
+            "matches": [
                 {
                     "team_01": "Sheffield United",
                     "score_team_01": 0,
@@ -1568,7 +1568,7 @@
         },
         {
             "date": "Saturday 17th February",
-            "fixtures": [
+            "matches": [
                 {
                     "team_01": "Brentford",
                     "score_team_01": 1,
@@ -1622,7 +1622,7 @@
         },
         {
             "date": "Monday 12th February",
-            "fixtures": [
+            "matches": [
                 {
                     "team_01": "Crystal Palace",
                     "score_team_01": 1,
@@ -1634,7 +1634,7 @@
         },
         {
             "date": "Sunday 11th February",
-            "fixtures": [
+            "matches": [
                 {
                     "team_01": "West Ham United",
                     "score_team_01": 0,
@@ -1653,7 +1653,7 @@
         },
         {
             "date": "Saturday 10th February",
-            "fixtures": [
+            "matches": [
                 {
                     "team_01": "Manchester City",
                     "score_team_01": 2,
@@ -1707,7 +1707,7 @@
         },
         {
             "date": "Monday 5th February",
-            "fixtures": [
+            "matches": [
                 {
                     "team_01": "Brentford",
                     "score_team_01": 1,
@@ -1719,7 +1719,7 @@
         },
         {
             "date": "Sunday 4th February",
-            "fixtures": [
+            "matches": [
                 {
                     "team_01": "Chelsea",
                     "score_team_01": 2,
@@ -1752,7 +1752,7 @@
         },
         {
             "date": "Saturday 3rd February",
-            "fixtures": [
+            "matches": [
                 {
                     "team_01": "Everton",
                     "score_team_01": 2,
@@ -1792,7 +1792,7 @@
         },
         {
             "date": "Thursday 1st February",
-            "fixtures": [
+            "matches": [
                 {
                     "team_01": "West Ham United",
                     "score_team_01": 1,
