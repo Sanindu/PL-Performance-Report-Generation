@@ -32,9 +32,6 @@ On clicking the "Generate Report" button, a report page is displayed with:
 A table showing selected football teams' information.
 A pie chart using Chart.js, showing percentages of matches played (wins, losses, draws, and remaining games).
 A bar chart comparing selected teams if more than one team is selected.
-On clicking the "Generate Report" button, a report page is displayed with:
-A table showing selected football teams' information.
-A pie chart using Chart.js, showing percentages of matches played (wins, losses, draws, and remaining games).
-A bar chart comparing selected teams if more than one team is selected.
-Secure Application
+
+# Secure Application
 A login page allows authorized users to enter their username and password to access the application features.
