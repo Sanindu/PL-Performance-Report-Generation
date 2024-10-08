@@ -1,4 +1,4 @@
-# Basic Football Teams Performance Report Application (PHP, HTML, CSS, JS, MYSQL)
+# Football Teams Performance Report Application (PHP, HTML, CSS, JS, MYSQL)
 
 This application displays football team data from a database in a table, allowing users to generate reports on selected teams. The reports include team information, a pie chart of match statistics, and a bar chart comparing multiple teams. The application is secured with a login system to ensure that only authorized users can access its features.
 
