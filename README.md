@@ -1,6 +1,18 @@
-# Football Teams Performance Report Application (PHP, HTML, CSS, JS, MYSQL)
+# Football Teams Performance Report Application
 
 This application displays football team data from a database in a table, allowing users to generate reports on selected teams. The reports include team information, a pie chart of match statistics, and a bar chart comparing multiple teams. The application is secured with a login system to ensure that only authorized users can access its features.
+
+### Login
+![](https://github.com/Sanindu/Premier-League-Site/blob/main/login.gif)
+
+### View Chart
+![](https://github.com/Sanindu/Premier-League-Site/blob/main/view_chart.gif)
+
+### Add New Record
+![](https://github.com/Sanindu/Premier-League-Site/blob/main/new_rec.gif)
+
+### Edit Record
+![](https://github.com/Sanindu/Premier-League-Site/blob/main/edit_rec.gif)
 
 Features
 JSON Schema
