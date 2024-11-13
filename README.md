@@ -5,7 +5,7 @@ This application displays football team data from a database in a table, allowin
 ### Login
 ![](https://github.com/Sanindu/Premier-League-Site/blob/main/login.gif)
 
-### View Chart
+### Performance comparison using Chart.js
 ![](https://github.com/Sanindu/Premier-League-Site/blob/main/view_chart.gif)
 
 ### Add New Record
