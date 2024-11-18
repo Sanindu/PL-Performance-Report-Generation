@@ -47,3 +47,69 @@ A bar chart comparing selected teams if more than one team is selected.
 
 # Secure Application
 A login page allows authorized users to enter their username and password to access the application features.
+
+# How to Run
+
+This guide will walk you through setting up and running the **PL Performance Report Generation** project.
+
+## Prerequisites
+
+- A local web server environment like [XAMPP](https://www.apachefriends.org/index.html) or [MAMP](https://www.mamp.info/en/) with PHP and MySQL.
+- A web browser to access the project.
+- Basic knowledge of navigating your file system using the command line.
+
+## Steps to Run the Project
+
+### 1. Clone the Repository
+
+Clone the repository to your local machine using the following command:
+
+```
+git clone https://github.com/Sanindu/PL-Performance-Report-Generation.git
+```
+###2. Navigate to the Project Directory
+Move into the project directory:
+
+```
+cd PL-Performance-Report-Generation
+```
+### 3. Setup Local Web Server
+Ensure you have a local web server environment that supports PHP and MySQL. You can use XAMPP or MAMP.
+
+### 4. Place Project Files in the Web Server Directory
+Move the project files to the appropriate web server directory:
+
+For XAMPP, place the project in the htdocs folder (e.g., C:\xampp\htdocs\PL-Performance-Report-Generation).
+For MAMP, place the project in the htdocs folder (/Applications/MAMP/htdocs/PL-Performance-Report-Generation).
+Example for XAMPP:
+
+```
+cp -r PL-Performance-Report-Generation /path/to/xampp/htdocs/PL-Performance-Report-Generation
+```
+### 5. Import the Database
+To set up the database using the included dump.sql file: <br>
+
+Start the Database Server: Use the XAMPP/MAMP control panel to start the MySQL server. <br>
+
+Access phpMyAdmin: Open your web browser and go to: <br>
+
+```
+http://localhost/phpmyadmin
+```
+Create a New Database: In phpMyAdmin, create a new database (e.g., pl_performance_report). Ensure the correct collation (e.g., utf8_general_ci) is set.
+
+Import the SQL File: <br>
+
+With the new database selected, go to the "Import" tab. <br>
+Click "Choose File" and select the dump.sql file from the project directory. <br>
+Click "Go" to import the database structure and data. <br>
+
+### 6. Start the Web Server
+Start the Apache server from the XAMPP/MAMP control panel.
+
+### 7. Access the Project in Your Browser
+Open a web browser and navigate to:
+
+```
+http://localhost/PL-Performance-Report-Generation
+```
