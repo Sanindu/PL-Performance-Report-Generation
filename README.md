@@ -50,7 +50,7 @@ A login page allows authorized users to enter their username and password to acc
 
 # How to Run
 
-This guide will walk you through setting up and running the **PL Performance Report Generation** project.
+This guide will walk you through setting up and running the project.
 
 ## Prerequisites
 
