@@ -67,7 +67,7 @@ Clone the repository to your local machine using the following command:
 ```
 git clone https://github.com/Sanindu/PL-Performance-Report-Generation.git
 ```
-###2. Navigate to the Project Directory
+### 2. Navigate to the Project Directory
 Move into the project directory:
 
 ```
